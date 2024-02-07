@@ -6,9 +6,7 @@
     padding: 30px;
     border-radius: 100px;
 
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    background-color: #000000;
 }
 
 a {
@@ -18,7 +16,7 @@ a {
 }
 
 nav {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 10px 0;
     position: fixed;
     width: 50%;
@@ -119,4 +117,144 @@ p {
     font-size: 18px;
     text-align: center;
     font-family: "Open Sans", sans-serif;
+}
+
+.timeline-section {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Adjust based on your preference */
+    margin-top: 50px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #c5c5c5; /* Line color */
+    transform: translateX(-50%);
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 20px; /* Adjust the space between events */
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    background: #2d9c5c; /* Circle color */
+    width: 20px; /* Circle size */
+    height: 20px; /* Circle size */
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    width: 45%; /* Adjust based on your preference */
+    padding: 0 15px;
+}
+
+.left {
+    position: relative;
+    left: 0;
+    text-align: right;
+}
+
+.right {
+    position: relative;
+    left: 55%; /* Adjust based on the width of .content */
+    text-align: left;
+}
+
+.content h3, .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.financial-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+}
+
+.financial-table thead th {
+    background-color: #2d9c5c;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.financial-table tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.financial-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.financial-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.vocabulary-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.definition {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+/* Styling for the dropdown */
+select {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    appearance: none; /* Remove default styling for select element */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="none" stroke="%23666" stroke-width="1.1" d="M6,8 L10,12 L14,8"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    cursor: pointer;
+}
+
+/* Styling for the dropdown options */
+select option {
+    padding: 10px;
+}
+
+/* Styling for the definitions */
+.definition {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect for dropdown */
+select:hover {
+    border-color: #999999;
 }
