@@ -1,0 +1,122 @@
+
+#enron-logo {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    padding: 30px;
+    border-radius: 100px;
+
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+nav {
+    background-color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 50%;
+    z-index: 100;
+    top: 0;
+    left: 25%;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    display: inline;
+    margin: 0 10px;
+    width: 100%;
+    text-align: center;
+}
+
+nav > ul > li > a {
+    font-size: 24px;
+    font-family: "Workbench", sans-serif;
+    letter-spacing: 5px;
+}
+
+nav > ul > li > a:hover {
+    color: #e92a35;
+}
+
+nav > ul > li > a:focus {
+    color: #2d9c5c;
+}
+
+h1 {
+    letter-spacing: 4px;
+    font-size: 48px;
+    font-family: "Workbench";
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: "Workbench", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.nav-spacer {
+    height: 200px;
+}
+
+.content-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.characters-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    max-width: 250px;
+}
+
+.character > img {
+    width: 184px;
+    height: 184px;
+    object-fit: cover;
+    align-self: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
